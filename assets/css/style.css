@@ -17,8 +17,8 @@ body {
 
 }
 .form{
-    width: 900px;
-    height: 600px ;
+
+
     box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.75);
     padding: 30px 20px;
     box-sizing: border-box;
@@ -28,9 +28,9 @@ body {
     transform: translate(-50%,-50%);
     font-size: 24px;
     color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+
+
+
 
 
 }
@@ -45,9 +45,9 @@ body {
     width: 625px;
 }
 
-h4 + input {
+/*h4 + input {
     margin-left: 120px;
-}
+}*/
 
 input{
     font-size: 0.8em;
@@ -55,9 +55,7 @@ input{
 .input {
     width: 300px;
 }
-input + input {
-    margin-left: 20px;
-}
+
 
 h1 {
     font-size: 1.5em;
@@ -112,3 +110,50 @@ hr{
     height: 40px;
     background-color: transparent;
 }
+
+
+/*
+===================
+
+*/
+
+
+
+.flexContainer{
+
+    display: flex;
+
+}
+
+.flexContainer > h4 {
+
+    flex-basis: 160px;
+    min-width: 160px;
+    max-width: 160px;
+
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+
+
+
+}
+
+
+.flexContainer > input, textarea {
+
+    flex-grow: 1;
+
+}
+
+
+input + input {
+    margin-left: 20px;
+}
+
+/*
+===================
+
+*/
